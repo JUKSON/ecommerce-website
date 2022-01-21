@@ -7,7 +7,7 @@ import Sidebar from "./sidebar";
 const Navbar = () => {
   return (
     <>
-      <Grid h={24} bg="black" maxW="100vw">
+      <Grid h={24} bg="black" maxW="100vw" minW="100vw">
         <Flex
           justifyContent="space-between"
           alignItems="center"

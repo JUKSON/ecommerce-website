@@ -15,13 +15,17 @@ import NextLink from "next/link";
 
 const ProductsSection = () => {
   return (
-    <Flex gap={12}>
-      <Flex gap={12}>
+    <>
+      <Flex
+        gap={[16, 16, 8, 14, 16]}
+        flexDir={{ base: "column", md: "row", lg: "row" }}
+      >
         <Flex
           bg="gray.200"
           flexDir="column"
           h={36}
-          w={80}
+          // w={{ md: 56, lg: 80 }}
+          w={[80, 80, 56, 64, 80]}
           alignItems="center"
           justifyContent="flex-end"
           position="relative"
@@ -56,7 +60,7 @@ const ProductsSection = () => {
           bg="gray.200"
           flexDir="column"
           h={36}
-          w={80}
+          w={[80, 80, 56, 64, 80]}
           alignItems="center"
           justifyContent="flex-end"
           position="relative"
@@ -87,13 +91,11 @@ const ProductsSection = () => {
             </NextLink>
           </Flex>
         </Flex>
-      </Flex>
-      <Flex gap={12}>
         <Flex
           bg="gray.200"
           flexDir="column"
           h={36}
-          w={80}
+          w={[80, 80, 56, 64, 80]}
           alignItems="center"
           justifyContent="flex-end"
           position="relative"
@@ -125,7 +127,7 @@ const ProductsSection = () => {
           </Flex>
         </Flex>
       </Flex>
-    </Flex>
+    </>
   );
 };
 
