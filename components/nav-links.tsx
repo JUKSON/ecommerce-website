@@ -9,7 +9,7 @@ const NavLinks = () => {
   const { asPath } = useRouter();
 
   return (
-    <Flex color="white" gap={8} display={["none", "none", "none", "flex"]}>
+    <Flex color="white" gap={8}>
       {links.map((link) => {
         return (
           <NextLink key={link.id} href={link.url}>
