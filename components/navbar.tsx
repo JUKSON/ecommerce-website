@@ -11,7 +11,7 @@ const Navbar = () => {
         <Flex
           justifyContent="space-between"
           alignItems="center"
-          mx={{ base: 6, md: 16, lg: 32 }}
+          mx={52}
           borderBottom="1px"
           color="whiteAlpha.400"
         >

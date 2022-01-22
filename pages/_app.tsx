@@ -12,6 +12,7 @@ function MyApp({ Component, pageProps }: AppProps) {
     },
     colors: {
       black: "#191919",
+      "orange.550": "#d87d4a",
     },
   });
 

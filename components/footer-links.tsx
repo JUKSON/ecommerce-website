@@ -3,11 +3,8 @@ import { Flex, Link } from "@chakra-ui/react";
 import NextLink from "next/link";
 
 import { links } from "util/links";
-import { useRouter } from "next/router";
 
-const NavLinks = () => {
-  const { asPath } = useRouter();
-
+const FooterLinks = () => {
   return (
     <Flex color="white" gap={8} display={["none", "none", "none", "flex"]}>
       {links.map((link) => {
@@ -19,7 +16,7 @@ const NavLinks = () => {
               textTransform="uppercase"
               letterSpacing={2}
               _hover={{ textDecoration: "none", color: "orange.500" }}
-              color={asPath === link.url ? "orange.500" : "white"}
+              color="white"
             >
               {link.text}
             </Link>
@@ -30,4 +27,4 @@ const NavLinks = () => {
   );
 };
 
-export default NavLinks;
+export default FooterLinks;

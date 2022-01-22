@@ -1,5 +1,5 @@
-import { Box, Flex } from "@chakra-ui/react";
 import React from "react";
+import Footer from "./footer";
 import Navbar from "./navbar";
 
 const Layout = ({ children }: { children: React.ReactNode }) => {
@@ -7,6 +7,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
     <>
       <Navbar />
       <main>{children}</main>
+      <Footer />
     </>
   );
 };

@@ -1,31 +1,18 @@
 import React from "react";
-import {
-  Box,
-  Button,
-  Flex,
-  Heading,
-  Img,
-  Link,
-  Stack,
-  Text,
-  VStack,
-} from "@chakra-ui/react";
+import { Flex, Img, Link, Text } from "@chakra-ui/react";
 import { ChevronRightIcon } from "@chakra-ui/icons";
 import NextLink from "next/link";
 
 const ProductsSection = () => {
   return (
-    <>
-      <Flex
-        gap={[16, 16, 8, 14, 16]}
-        flexDir={{ base: "column", md: "row", lg: "row" }}
-      >
+    <Flex justifyContent="center">
+      <Flex gap={10}>
         <Flex
-          bg="gray.200"
+          bg="gray.100"
+          borderRadius="5px"
           flexDir="column"
-          h={36}
-          // w={{ md: 56, lg: 80 }}
-          w={[80, 80, 56, 64, 80]}
+          h={40}
+          w="22rem"
           alignItems="center"
           justifyContent="flex-end"
           position="relative"
@@ -35,13 +22,14 @@ const ProductsSection = () => {
           <Img
             src="/image-headphones.png"
             position="absolute"
-            w={32}
+            w={36}
             top="-40px"
           />
           <Text
             textTransform="uppercase"
-            fontSize="small"
+            fontSize="medium"
             fontWeight="semibold"
+            letterSpacing={2}
           >
             Headphones
           </Text>
@@ -57,10 +45,11 @@ const ProductsSection = () => {
           </Flex>
         </Flex>
         <Flex
-          bg="gray.200"
+          bg="gray.100"
+          borderRadius="5px"
           flexDir="column"
-          h={36}
-          w={[80, 80, 56, 64, 80]}
+          h={40}
+          w="22rem"
           alignItems="center"
           justifyContent="flex-end"
           position="relative"
@@ -70,13 +59,14 @@ const ProductsSection = () => {
           <Img
             src="/image-speakers.png"
             position="absolute"
-            w={32}
+            w={36}
             top="-40px"
           />
           <Text
             textTransform="uppercase"
-            fontSize="small"
+            fontSize="medium"
             fontWeight="semibold"
+            letterSpacing={2}
           >
             Speakers
           </Text>
@@ -92,10 +82,11 @@ const ProductsSection = () => {
           </Flex>
         </Flex>
         <Flex
-          bg="gray.200"
+          bg="gray.100"
+          borderRadius="5px"
           flexDir="column"
-          h={36}
-          w={[80, 80, 56, 64, 80]}
+          h={40}
+          w="22rem"
           alignItems="center"
           justifyContent="flex-end"
           position="relative"
@@ -105,13 +96,14 @@ const ProductsSection = () => {
           <Img
             src="/image-earphones.png"
             position="absolute"
-            w={32}
+            w={36}
             top="-40px"
           />
           <Text
             textTransform="uppercase"
-            fontSize="small"
+            fontSize="medium"
             fontWeight="semibold"
+            letterSpacing={2}
           >
             Earphones
           </Text>
@@ -127,7 +119,7 @@ const ProductsSection = () => {
           </Flex>
         </Flex>
       </Flex>
-    </>
+    </Flex>
   );
 };
 
